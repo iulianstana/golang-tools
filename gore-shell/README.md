@@ -1,6 +1,6 @@
 # Gore shell
 
-[![Source code](../src/watch.jpg)](https://github.com/motemen/gore)
+[![Source code](../src/reference.png)](https://github.com/motemen/gore)
 
 Nice tool to have a shell kind in golang.
 

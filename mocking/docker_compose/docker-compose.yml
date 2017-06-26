@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+    mocking:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        command: sleep 3600
+        image: mocking_image
+        volumes:
+            - ../:/opt/src/mocking
+        privileged: true
+        container_name:
+            mocking_container
+        links:
+            - redis
+    redis:
+        image: redis
+        container_name:
+            mocking_redis

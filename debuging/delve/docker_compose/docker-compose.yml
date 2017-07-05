@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    debuging:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        command: sleep 3600
+        image: debug_image
+        volumes:
+            - ../:/opt/src/mocking
+        privileged: true
+        container_name:
+            debuging_container
+
